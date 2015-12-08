@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RedVC.swift
 //  StoryboardFreePractice
 //
 //  Created by Nick on 12/8/15.
@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RedVC: UIViewController {
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
