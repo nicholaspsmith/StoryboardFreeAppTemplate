@@ -14,8 +14,38 @@
         <view contentMode="scaleToFill" id="MqL-Ii-0TW">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="0H9-XW-yyr">
+                    <rect key="frame" x="161" y="146" width="42" height="160"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWj-yG-0mL">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                            <animations/>
+                            <state key="normal" title="Green">
+                                <color key="titleColor" red="0.0" green="1" blue="0.050397792599999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="loadGreen:" destination="-1" eventType="touchUpInside" id="om5-eu-Rwq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbA-Rf-H2R">
+                            <rect key="frame" x="0.0" y="130" width="42" height="30"/>
+                            <animations/>
+                            <state key="normal" title="Blue"/>
+                            <connections>
+                                <action selector="loadBlue:" destination="-1" eventType="touchUpInside" id="HJw-Cv-w68"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                </stackView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="0.35112528304879975" blue="0.34370398685376302" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0H9-XW-yyr" firstAttribute="centerX" secondItem="MqL-Ii-0TW" secondAttribute="centerX" id="9nQ-qh-ydP"/>
+                <constraint firstItem="0H9-XW-yyr" firstAttribute="centerY" secondItem="MqL-Ii-0TW" secondAttribute="centerY" id="rYL-K2-nwn"/>
+            </constraints>
             <point key="canvasLocation" x="352" y="429"/>
         </view>
     </objects>

@@ -14,8 +14,40 @@
         <view contentMode="scaleToFill" id="MqL-Ii-0TW">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="7Ig-DB-4FM">
+                    <rect key="frame" x="186" y="149" width="42" height="160"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tD-5z-q5H">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                            <animations/>
+                            <state key="normal" title="Red">
+                                <color key="titleColor" red="1" green="0.088908366439999997" blue="0.064875162920000007" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="loadRed:" destination="-1" eventType="touchUpInside" id="v4p-N6-BGi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYf-KA-GqB">
+                            <rect key="frame" x="0.0" y="130" width="42" height="30"/>
+                            <animations/>
+                            <state key="normal" title="Green">
+                                <color key="titleColor" red="0.052765942150000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="loadGreen:" destination="-1" eventType="touchUpInside" id="cS1-Jz-e7c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                </stackView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" red="0.0" green="0.75631876689999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7Ig-DB-4FM" firstAttribute="centerY" secondItem="MqL-Ii-0TW" secondAttribute="centerY" id="7fg-Z4-6Kq"/>
+                <constraint firstItem="7Ig-DB-4FM" firstAttribute="centerX" secondItem="MqL-Ii-0TW" secondAttribute="centerX" id="OI4-B9-NIY"/>
+            </constraints>
             <point key="canvasLocation" x="352" y="429"/>
         </view>
     </objects>
